@@ -1,0 +1,38 @@
+{
+  "name": "meeseeks",
+  "version": "0.0.1",
+  "description": "A new project template for Mongo & Express & Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillermohernandez/Meeseeks.git"
+  },
+  "author": "Guillermo Hernandez Jr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guillermohernandez/Meeseeks/issues"
+  },
+  "homepage": "https://github.com/guillermohernandez/Meeseeks#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-static-hash": "^0.1.4",
+    "gulp-uglify": "^2.0.1",
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "gulp-version-number": "^0.1.6"
+  }
+}
