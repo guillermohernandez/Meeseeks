@@ -9,6 +9,7 @@ const browserSync = require('browser-sync').create();
 
 // tasks
 
+// compiles your SASS and runs it through autoprefixer
 gulp.task('css', function() {
 	return gulp.src('src/sass/**/*.scss')
 		.pipe(sourcemaps.init())
@@ -21,12 +22,14 @@ gulp.task('css', function() {
 		.pipe(browserSync.stream())
 });
 
+// Runs your image through imagemin and copies your images from src to dist folder
 gulp.task('images', function(){
 	return gulp.src('src/images/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
 });
 
+// copies your HTML from src to dist folder
 gulp.task('copy', function() {
 	return gulp.src('src/*.html')
 		.pipe(gulp.dest('dist'))
@@ -41,6 +44,7 @@ gulp.task('browserSync', function() {
 	})
 });
 
+// watches your sass & html and reloads with changes
 gulp.task('watch', ['browserSync', 'css'], function(){
 	gulp.watch('src/sass/**/*.scss', ['css']);
 	gulp.watch('src/*.html', ['copy']);
